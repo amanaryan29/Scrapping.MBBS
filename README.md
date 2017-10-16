@@ -1,2 +1,9 @@
 # Scrapping.MBBS
 A Scraped Trainer that recommends various Articles and website links on the basis of the disease,symptoms and complications entered
+
+
+Using Disease profiles which contains Complications, disease name and symptoms the software first searches the name of the disease on the search bar of webmd.com,cdc.gov,nhs.uk,medline.gov,nih.gov,etc. Now it goes through the articles presented and searches for the keywords mentioned in symptoms and complications in those articles.The results are then displayed ranked according to the frequency of relevant conditions and symptoms queried for. For eg. if the query is the disease:Chronic Kidney Disease, symptoms:"Loss of appetite, "Fatigue and weakness",etc. and complications are :"Diabetes","High BP",etc.it will search for Chronic Kidney Disease and then it will narrow down the search to more relevant articles which contain higher frequency of the queried symptoms and complications. This will help in getting the best search among the pool of articles.
+
+Initially the database of search keywords with articles is empty. As time progresses and people start searching and reading those articles they will give their upvote or downvote and then in the search results the the articles will be sorted first according to decreasing order of upvotes, if upvotes of 2 articles are same then according to increasing order of downvotes and in case both upvotes and downvotes are same then according to number of hits on that article.
+
+We will also built a "You might also want to read" section. This will be built using K-Nearest Neighbours Algorithm. We have a scraped dataset of diseases and their symptoms. Using K-Nearest Neighbours on the obtained dataset we will find diseases related to the queried disease and display the articles related to those diseases in this section. 
