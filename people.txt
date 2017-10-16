@@ -1,0 +1,3 @@
+Disease check,checkk 
+ Symptoms check1,check2 
+ Complications check2,check3
